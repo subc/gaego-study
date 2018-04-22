@@ -1,6 +1,14 @@
+application: gae-study-201408
+version: 7
 runtime: go
 api_version: go1.8
 
 handlers:
 - url: /.*
   script: _go_app
+
+nobuild_files:
+- vendor
+
+skip_files:
+- vendor/.*$

@@ -13,4 +13,4 @@ serve: ## ローカルサーバ実行
 	goapp serve src
 
 deploy: ## gaeへデプロイ OPTIONS: project_id=${PROJECT_ID} version=${VERSION}
-	gcloud app deploy src
+	goapp deploy src
