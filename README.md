@@ -1,9 +1,11 @@
 
-# deploy
-gcloud app deploy
+$ make help
 
-# ローカル実行
-goapp serve
+```
+Usage: make [target]
 
-# ブラウザで見る
-gcloud app browse
+Targets:
+help                           Print this help
+serve                          ローカルサーバ実行
+deploy                         gaeへデプロイ OPTIONS: project_id=${PROJECT_ID} version=${VERSION}
+```
